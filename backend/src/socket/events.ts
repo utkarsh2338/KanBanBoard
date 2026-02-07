@@ -1,4 +1,4 @@
-import { Task } from "../models/Task";
+import { Task } from "../models/Task.js";
 
 export interface ClientToServerEvents {
     "task:create": (task: Task) => void;

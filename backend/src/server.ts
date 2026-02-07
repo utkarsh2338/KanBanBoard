@@ -2,8 +2,8 @@ import express from "express";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
-import { ClientToServerEvents, ServerToClientEvents } from "./socket/events";
-import { setupSocketHandlers } from "./socket/handlers";
+import { ClientToServerEvents, ServerToClientEvents } from "./socket/events.js";
+import { setupSocketHandlers } from "./socket/handlers.js";
 
 const app = express();
 const httpServer = createServer(app);

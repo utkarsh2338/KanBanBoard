@@ -1,7 +1,7 @@
 import { Server, Socket } from "socket.io";
-import { ClientToServerEvents, ServerToClientEvents } from "./events";
-import { taskStore } from "../store/taskStore";
-import { Task } from "../models/Task";
+import { ClientToServerEvents, ServerToClientEvents } from "./events.js";
+import { taskStore } from "../store/taskStore.js";
+import { Task } from "../models/Task.js";
 
 export function setupSocketHandlers(
     io: Server<ClientToServerEvents, ServerToClientEvents>,

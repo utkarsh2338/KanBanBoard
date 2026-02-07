@@ -1,4 +1,4 @@
-import { Task, TaskStatus } from "../models/Task";
+import { Task, TaskStatus } from "../models/Task.js";
 
 class TaskStore {
     private tasks: Map<string, Task> = new Map();
